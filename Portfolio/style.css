@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  background-color: #181425; /* Purple */
+  color: #f3ba04; /* Yellow */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold; /* All text bold */
+}
+
+header {
+  background-color: #f3ba04; /* Yellow */
+  color: #a22633; /* Red */
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+/* About Me Section */
+#about {
+  background-color: #181425; /* Same purple as rest of the page */
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 5px solid #a22633; /* Red Accent Border */
+  border-bottom: 5px solid #a22633;
+}
+
+
+#about h2,
+#about p,
+#virtual-portfolio h3 {
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tabs-projects {
+  display: flex;
+  width: 75%;
+  gap: 1.5rem;
+  margin: auto;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+
+.button-border {
+    border: 2px solid black !important;
+}
+
+@media only screen and (max-width: 1377px) {
+  .tabs-projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+	justify-content: center;
+  }
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+}
+
+/* Center Titles */
+.centered-title {
+  text-align: center;
+  margin-bottom: 20px; /* Add space below the titles */
+  font-size: 1.8rem; /* Adjust font size */
+  font-weight: bold;
+}
+
+/* Center and Limit Width for Text Content Only */
+.text-container {
+  max-width: 800px; /* Limit text width */
+  margin: 0 auto; /* Center text horizontally */
+  padding: 0 20px; /* Add padding to the sides for breathing room */
+}
+
+@media only screen and (max-width: 1377px) {
+  .tab-button {
+    margin: none;
+    flex: 1;
+    padding: 15px;
+    background-color: #a22633; /* Accent color */
+    border: none;
+    color: #f3ba04;
+    cursor: pointer;
+    text-align: center;
+    max-width: 25rem;
+    font-weight: 600;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media only screen and (min-width: 1378px) {
+  .tab-button {
+    flex: 1;
+    padding: 15px;
+    background-color: #a22633; /* Accent color */
+    border: none;
+    color: #f3ba04;
+    cursor: pointer;
+    text-align: center;
+    max-width: 25rem;
+    margin: auto;
+    font-weight: 600;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.tab-button:hover {
+  background-color: #181425;
+  color: #a22633;
+}
+
+/* Dynamic Content Section */
+#tab-content {
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto 4rem auto;
+    max-width: 80%; /* Margins for text to avoid edge alignment */
+}
+
+/* Content Sections */
+.content {
+  display: none; /* Hidden by default */
+}
+
+.content h3,
+.content h4 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Text and Video Section Formatting */
+.text-video-section {
+  text-align: start; /* Align text to the left */
+  margin: auto; /* Center the entire section */
+  padding: 20px; /* Add padding for better readability */
+}
+
+/* Video Section */
+video {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin: auto;
+  display: flex;
+}
+
+/* Highlighted Text */
+.highlight {
+  color: #990000; /* Deep Crimson */
+  font-weight: bold;
+}

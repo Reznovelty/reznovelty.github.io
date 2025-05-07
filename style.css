@@ -131,7 +131,8 @@ iframe {
 
 /* Dynamic Content Section */
 #tab-content {
-    background-color: #ffffff; /* White background */
+    background-color: #f3ba04; /* Yellow background */
+	color: #181425; /* Purple Text */
     padding: 10px;
     border-radius: 10px;
     text-align: center;
